@@ -1,0 +1,138 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* BASE COMÚN */
+.card-base {
+    width: 400px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* --- ESTILOS CLIMA  --- */
+.weather-card {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+}
+
+.weather-card .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.weather-card .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.weather-card .col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* --- ESTILOS POKÉMON --- */
+.pokemon-card {
+    background: #f83333;
+    color: #292828;
+}
+
+.poke-header-bg {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.poke-id-back {
+    font-size: 80px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    top: 20px;
+    z-index: 0;
+}
+
+.pokemon-img {
+    width: 180px;
+    position: relative;
+    z-index: 1;
+}
+
+.poke-id-pill {
+    display: inline-block;
+    background: #171717;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.poke-name {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.poke-types-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.type-badge {
+    padding: 5px 18px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Colores de Tipos */
+.grass { background: #7AC74C; } .poison { background: #A33EA1; }
+.fire { background: #EE8130; } .water { background: #6390F0; }
+.electric { background: #F7D02C; } .bug { background: #A6B91A; }
+
+.poke-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stat-item p { font-size: 18px; font-weight: bold; }
+.stat-item span { font-size: 12px; color: #000000; }
+
+/* BUSCADORES COMUNES */
+.search-bar { display: flex; align-items: center; margin-bottom: 20px; }
+.search-bar input {
+    border: 0; outline: 0; background: #fff;
+    padding: 10px 25px; height: 50px; border-radius: 30px; flex: 1; margin-right: 10px;
+}
+.search-bar button {
+    border: 0; background: #fff; border-radius: 50%; width: 50px; height: 50px; cursor: pointer;
+}

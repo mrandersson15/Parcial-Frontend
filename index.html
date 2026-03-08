@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima y Pokémon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="card-base weather-card">
+            <div class="search-bar">
+                <input type="text" class="weather-input" placeholder="Ingrese ciudad..." spellcheck="false">
+                <button class="weather-btn"><img src="images/search.png" alt="buscar"></button>
+            </div>
+            <div class="error" style="display: none;">
+                <p>Ciudad no encontrada</p>
+            </div>
+            <div class="weather" style="display: none;">
+                <img src="images/rain.png" alt="clima" class="weather-icon">
+                <h1 class="temp">--°C</h1>
+                <h2 class="city">--</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png" alt="humedad">
+                        <div>
+                            <p class="humidity">--%</p>
+                            <p>Humedad</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" alt="viento">
+                        <div>
+                            <p class="wind">-- km/h</p>
+                            <p>Viento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-base pokemon-card">
+            <div class="search-bar">
+                <input type="text" class="pokemon-input" placeholder="Nombre Pokémon..." spellcheck="false">
+                <button class="pokemon-btn"><img src="images/search.png" alt="buscar"></button>
+            </div>
+            <div class="error-poke" style="display: none;">
+                <p>Pokémon no encontrado</p>
+            </div>
+            <div class="pokemon-info" style="display: none;">
+                <div class="poke-header-bg">
+                    <p class="poke-id-back">#000</p>
+                    <img src="" alt="pokemon" class="pokemon-img">
+                </div>
+                
+                <div class="poke-body">
+                    <div class="poke-id-pill">#000</div>
+                    <h1 class="poke-name">--</h1>
+                    
+                    <div class="poke-types-container"></div>
+
+                    <div class="poke-stats">
+                        <div class="stat-item">
+                            <p class="poke-height">-- M</p>
+                            <span>Altura</span>
+                        </div>
+                        <div class="stat-item">
+                            <p class="poke-weight">-- KG</p>
+                            <span>Peso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/clima.js"></script>
+    <script src="js/pokemon.js"></script>
+</body>
+</html>
